@@ -1,142 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>coming out soon</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background: linear-gradient(145deg, #0d0d0d, #1a1a1a);
-            font-family: 'Arial', sans-serif;
-            overflow: hidden;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Under Construction</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #f0f4f7;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+    }
 
-        .logo-container {
-            position: relative;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            color: #fff;
-            font-size: 80px;
-            font-weight: bold;
-            text-transform: uppercase;
-            text-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
-        }
+    .content {
+      text-align: center;
+      background: white;
+      padding: 60px 80px;
+      border-radius: 20px;
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+      width: 80%;
+      max-width: 500px;
+    }
 
-        .coming-soon {
-            font-size: 24px;
-            font-weight: bold;
-            color: #ff4081;
-            text-shadow: 0 4px 10px rgba(255, 64, 129, 0.7);
-            margin-bottom: 20px;
-            font-family: 'Courier New', Courier, monospace;
-            animation: fadeIn 2s ease-in-out;
-        }
+    .logo {
+      font-size: 36px;
+      font-weight: 600;
+      color: #3f8cff;
+      margin-bottom: 20px;
+    }
 
-        .swirl {
-            position: absolute;
-            width: 120px;
-            height: 120px;
-            border: 3px solid transparent;
-            border-top-color: #fff;
-            border-radius: 50%;
-            animation: rotateSwirl 3s linear infinite;
-            opacity: 0.2;
-        }
+    .content h1 {
+      font-size: 36px;
+      font-weight: 600;
+      color: #3f8cff;
+      margin-bottom: 20px;
+      animation: fadeIn 1s ease-in-out;
+    }
 
-        .swirl:nth-child(1) {
-            width: 140px;
-            height: 140px;
-            animation-delay: 0s;
-            opacity: 0.3;
-        }
+    .content p {
+      font-size: 20px;
+      color: #777;
+      margin-bottom: 30px;
+      font-weight: 500;
+    }
 
-        .swirl:nth-child(2) {
-            width: 180px;
-            height: 180px;
-            animation-delay: -0.5s;
-            opacity: 0.2;
-        }
+    .construction-icon {
+      font-size: 120px;
+      color: #3f8cff;
+      margin-bottom: 30px;
+      animation: rotate 1s linear infinite;
+    }
 
-        .swirl:nth-child(3) {
-            width: 220px;
-            height: 220px;
-            animation-delay: -1s;
-            opacity: 0.15;
-        }
+    /* Fade In Animation */
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
 
-        .swirl-gradient {
-            position: absolute;
-            width: 200px;
-            height: 200px;
-            background: radial-gradient(circle, rgba(255, 255, 255, 0.2), transparent 70%);
-            border-radius: 50%;
-            animation: pulse 2.5s infinite ease-in-out;
-            z-index: -1;
-        }
-
-        .text {
-            position: relative;
-            animation: fadeIn 2s ease-in-out;
-            background: linear-gradient(90deg, #ffffff, #cccccc);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-
-        .by-azura {
-            position: absolute;
-            bottom: -40px;
-            font-size: 16px;
-            color: rgba(255, 255, 255, 0.7);
-            opacity: 0;
-            animation: fadeIn 2s ease-in-out forwards;
-            animation-delay: 1.5s;
-        }
-
-        @keyframes rotateSwirl {
-            from {
-                transform: rotate(0deg);
-            }
-            to {
-                transform: rotate(360deg);
-            }
-        }
-
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
-            to {
-                opacity: 1;
-            }
-        }
-
-        @keyframes pulse {
-            0%, 100% {
-                transform: scale(1);
-            }
-            50% {
-                transform: scale(1.2);
-            }
-        }
-    </style>
+    /* Rotate Animation */
+    @keyframes rotate {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
 </head>
 <body>
-    <div class="logo-container">
-        <div class="coming-soon">Coming Out Soon</div>
-        <div class="swirl"></div>
-        <div class="swirl"></div>
-        <div class="swirl"></div>
-        <div class="swirl-gradient"></div>
-        <div class="text">Ajura store</div>
-        <div class="by-azura">By Azura Group</div>
+  <div class="content">
+    <div class="logo">Ajura Store</div> <!-- Azura Store logo -->
+    <div class="construction-icon">
+      <i class="fas fa-cogs"></i>
     </div>
+    <h1>We're Updating Our Website</h1>
+    <p>Our website is currently undergoing some updates. We'll be back soon. Thanks for your patience!</p>
+  </div>
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </body>
 </html>
